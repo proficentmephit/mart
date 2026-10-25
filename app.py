@@ -12,7 +12,7 @@ st.write("Enter the advertising budgets below to predict estimated Sales.")
 @st.cache_resource
 def load_model():
     # Although named .csv, it contains the serialized model
-    return joblib.load('advertising_model.csv')
+    return joblib.load('model.sav')
 
 try:
     model = load_model()
